@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/clear" />
+
+    <ImageButton
+        android:id="@+id/loadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_toEndOf="@+id/clearButton"
+        android:layout_toRightOf="@+id/clearButton"
+        app:srcCompat="@drawable/refresh" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:layout_below="@+id/toolbar4"
+        android:layout_marginTop="0dp"
+        android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+    <RatingBar
+        android:id="@+id/mainRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:stepSize="1"
+        android:layout_toEndOf="@+id/loadButton"
+        android:layout_toRightOf="@+id/loadButton" />
+
+</RelativeLayout>
+
+    <!--android:layout_alignTop="@+id/toolbar4"-->
