@@ -1,5 +1,9 @@
 # Photo Gallery App for Android
 
+### Preview
+
+![alt text](screenshot.png)
+
 ### APK
 
 app-debug.apk is included at root.
